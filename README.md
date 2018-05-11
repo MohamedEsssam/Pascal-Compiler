@@ -1,2 +1,2 @@
-# SimpleCompiler-
+# SimpleCompiler
 College Project
