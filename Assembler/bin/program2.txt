@@ -1,0 +1,23 @@
+IODEV       START      0
+BEGIN       LDX        ZERO
+RLOOP       TD         INDEV1
+            JEQ        RLOOP
+R2LOOP      TD	       INDEV2
+            JEQ        R2LOOP
+            RD         INDEV1
+            STCH       VALUE,X
+            WD         INDEV2
+R3LOOP      TD         INDEV3
+            JEQ        R3LOOP
+            RD         INDEV3
+            WD         INDEV1
+            TIX        FIFTY
+            JLT        RLOOP
+INDEV1      BYTE       X'F1'
+INDEV2      BYTE       X'C0'
+INDEV3      BYTE       X'03' 
+VALUE       RESB       50
+FIFTY       WORD       50
+ZERO        WORD       0       
+            END        BEGIN 
+	

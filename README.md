@@ -1,2 +1,0 @@
-# SimpleCompiler
-College Project

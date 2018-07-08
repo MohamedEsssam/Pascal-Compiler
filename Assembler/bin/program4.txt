@@ -1,0 +1,16 @@
+CPYBTE      START      0
+FIRST       LDCH       FBYT
+            STCH       SBYT
+            LDCH       TBYT
+            STCH       FBYT
+            TD         INDEV
+            RD         INDEV
+            STCH       SBYT
+            LDCH       FIBYT
+            WD         INDEV
+TBYT        BYTE       X'03'
+FIBYT       BYTE       C'NULL'
+INDEV       BYTE       X'0A'
+SBYT        RESB       1
+BYT       RESB       1
+            END        FIRST 

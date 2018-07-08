@@ -1,0 +1,11 @@
+CPYARR      START      0
+FIRST       LDX        ZERO
+            LDCH       VALUE
+COPYLO      STCH       ARR2,X
+            TIX        HUND
+            JLT        COPYLO
+ARR2        RESB       100
+ZERO        WORD       0 
+HUND        WORD       100
+VALUE       BYTE       X'F1'
+            END        FIRST 

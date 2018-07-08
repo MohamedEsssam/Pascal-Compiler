@@ -1,0 +1,10 @@
+RUNSUM      START      0
+FIRST       LDA        ZERO
+                   LDX        ONE
+LOOP        ADD        ONE
+                  TIX        ELEVEN
+                  JLT        LOOP
+ZERO        WORD       0
+ONE         WORD       1
+ELEVEN      WORD       11 
+                        END        FIRST 

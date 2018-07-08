@@ -1,0 +1,17 @@
+TIME        START      0
+BEGIN       LDA        HOURS
+            MUL        SIXTIY
+            STA        MINTS 
+WLOOP       TD         SCREEN
+            JEQ        WLOOP
+            LDCH       MINTS,X
+            WD         SCREEN
+            TIX        THREE
+            JLT        WLOOP
+HOURS       WORD       8
+SIXTIY      WORD       60
+SCREEN      BYTE       X'02'
+MINTS       RESW       1 
+THREE       WORD       3 
+            END        BEGIN 
+	
