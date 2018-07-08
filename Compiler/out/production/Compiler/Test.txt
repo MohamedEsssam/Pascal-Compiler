@@ -1,0 +1,18 @@
+PROGRAM BASIC
+VAR X,Y,Z,T,V9,X8,X9,g,y,x4,x,x5,h : INTEGER
+BEGIN
+READ(x,y,z,n)
+WRITE(x,y,m)
+h := X*(  Y +  Y)
+X :=   X +(  g  *y  )
+
+
+h:=(x*y)+ x4
+x5:=(x+y)*x5
+T:= Y + Z
+X8 := Y / Z
+X9 := Y - Z
+V9:=Z*X*Z
+Z:=Y + X
+END
+END.
